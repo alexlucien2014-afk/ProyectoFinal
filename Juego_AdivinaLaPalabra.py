@@ -51,7 +51,7 @@ for letra in letras:
         break
 
 # Resultados finales
-print("\n=== RESULTADOS ===")
+print("\nRESULTADOS")
 if fallos >= maximo_fallos:
     print("No pude adivinar tu palabra. :(")
 else:
