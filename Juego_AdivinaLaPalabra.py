@@ -41,16 +41,13 @@ for letra in letras:
         print(f"Fallé. Intentos usados: {fallos}/{maximo_fallos}")
         posibles = [p for p in posibles if letra not in p]
 
-    # Mostrar estado actual
     print("Palabras que podrían ser tu palabra:", posibles)
 
-    # Si queda una sola palabra, ya se adivinó
     if len(posibles) == 1:
         print("\n¡Creo que ya sé cuál es tu palabra!")
         print(f"Tu palabra es: {posibles[0].upper()} 🎉")
         break
 
-# Resultados finales
 print("\nRESULTADOS")
 if fallos >= maximo_fallos:
     print("No pude adivinar tu palabra. :(")
